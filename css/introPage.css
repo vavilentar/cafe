@@ -1,0 +1,172 @@
+.intro-page_inner {
+	background-color: rgb(206, 206, 206);
+	background-image: url(../img/cafeefir.jpg);
+	background-size: cover;
+	background-position: center;
+	color: white;
+	height: 100vh;
+}
+.intro-page_upper {
+	position: relative;
+}
+.intro-page_logotype {
+	position: absolute;
+	top: 0;
+	width: 200px;
+	left: 50%;
+	transform: translateX(-50%);
+	filter: drop-shadow(0px 0px 1px #222);
+	animation: main-title-fade 1s ease forwards;
+
+}
+.intro-page_center {
+	display: flex;
+	justify-content: space-between;
+	height: 500px;
+	align-items: center;
+}
+.intro-page_center_column1 {
+	display: flex;
+	align-items:flex-start;
+	transform: rotate(-90deg);
+	width: 50px;
+}
+.intro-page_center_column2 {
+	text-align: center;
+}
+.intro-page_center_column3 {
+	background: rgba(255, 166, 0, 0.9);
+	border-radius: 0 15px 15px 0;
+	animation: social-fade 1.2s ease-in-out forwards;
+}
+
+.efir-social {
+	display: flex;
+	flex-direction: column;
+	animation: social-fade 1s ease-in-out forwards;
+}
+.efir-social img {
+	width: 50px;
+	filter: drop-shadow(0px 0px 3px #222);
+}
+.efir-social img:hover {
+	transition: filter .5s ease;
+	width: 50px;
+	filter: drop-shadow(0px 0px 5px rgb(255, 235, 147));
+}
+
+.intro-page_bottom {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.arrow-down-link{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+	width: 50px;
+	border: 2px solid rgb(255, 255, 255);
+	border-radius: 100%;
+	color: white;
+	font-size: 40px;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+	0px 8px 13px rgba(0,0,0,0.1),
+	0px 18px 23px rgba(0,0,0,0.1);
+	transform: translateY(-30px);
+	background: rgba(255, 166, 0, 0.9);
+}
+
+.subheader {
+	opacity: 0;
+	font-size: 48px;
+	font-weight: 600;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+	animation: main-title-fade 1s ease forwards;
+	animation-delay: 0.5s;
+	transform: translateY(30px);
+	cursor:default;
+
+}
+
+.main-title{
+	position: relative;
+	opacity: 0;
+	font-size: 88px;
+	font-weight: 800;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+	animation: main-title-fade 1s ease forwards;
+	animation-delay: 1s;
+	cursor:default;
+}
+
+.main-title::after {
+	position: absolute;
+	content: '';
+	height: 5px;
+	width: 100%;
+	background: rgba(255, 166, 0, 0.9);
+	bottom: 10px;
+	left: 0;
+	border-radius: 15px;
+	box-shadow: 0px 4px 3px rgba(0,0,0,0.4);
+}
+
+@keyframes social-fade {
+	from {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+
+	}
+}
+
+@keyframes main-title-fade {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.book-table_btn {
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background: linear-gradient(135deg, rgba(255, 166, 0, 0.9) 25%, transparent 25%);
+    background-repeat: no-repeat;
+    background-size: 1000px auto;
+    background-position: -300px 0;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Open Sans';
+    line-height: 20px;
+    color: #ffffff;
+    height: 30px;
+    width: 150px;
+    cursor: pointer;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+    0px 8px 13px rgba(0,0,0,0.1),
+    0px 18px 23px rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 5px rgba(255, 187, 62, 0.9);
+}
+.book-table_btn:hover{
+	animation: btn-background 1s forwards;
+}
+
+@keyframes btn-background {
+	from{
+		background-position: -300px 0;
+	}
+	to {
+		background-position: 0px 0;
+	}
+}

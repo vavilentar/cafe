@@ -1,0 +1,59 @@
+/*Imports*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+@import url(./header.css);
+@import url(./introPage.css);
+@import url(./aboutUs.css);
+@import url(./slider.css);
+@import url(./cafeMenu.css);
+
+/*General styles*/
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.wrapper {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+[class*="__container"] {
+	font-family: 'Open Sans';
+}
+
+body,
+html {
+	scroll-behavior: smooth;
+}
+
+/*Other styles*/
+

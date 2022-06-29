@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Кафе "Эфир"</title>
+</head>
+
+<body>
+	<header class="header header__container">
+		<div class="header_inner">
+			<div class="header_list">
+				<ul class="header_list_left">
+					<li class="header-list_item"><a href="#1">Главная</a></li>
+					<li class="header-list_item"><a href="#2">О нас</a></li>
+					<li class="header-list_item"><a href="#3">Меню</a></li>
+				</ul>
+			</div>
+			<div class="header_list">
+				<ul class="header_list_right">
+					<li class="header-list_item"><a href="">События</a></li>
+					<li class="header-list_item"><a href="">Бронирование</a></li>
+					<li class="header-list_item"><a href="">Контакты</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<main class="main main__container">
+		<div id="1" class="intro-page_inner">
+			<div class="intro-page_upper">
+				<!-- Логотип -->
+				<img src="./img/heaven-white.png" alt="" class="intro-page_logotype">
+			</div>
+			<div class="intro-page_center">
+				<div class="intro-page_center_column3">
+					<a href="1" class="efir-social"><img src="./icons/rutube.png" alt=""></a>
+					<a href="2" class="efir-social"><img src="./icons/telegram.png" alt=""></a>
+					<a href="3" class="efir-social"><img src="./icons/vk-new.png" alt=""></a>
+					<a href="4" class="efir-social"><img src="./icons/odn.png" alt=""></a>
+				</div> <!-- Социальные сети -->
+				<div class="intro-page_center_column2">
+					<h2 class="subheader">Кафе</h2>
+					<h1 class="title main-title">"ЭФИР"</h1>
+					<button class="book-table_btn">Забронировать</button>
+					<button class="book-table_btn">Посмотреть меню</button>
+
+				</div> <!-- Название -->
+				<div class="intro-page_center_column1"></div> <!-- Режим работы -->
+
+			</div>
+			<div class="intro-page_bottom">
+				<!-- Прокрутка вниз -->
+				<a href="#2" class="arrow-down-link"><i class="fa-solid fa-arrow-down"></i></a>
+			</div>
+		</div>
+		<div id="2" class="about-us-page about-us-page__container info-block">
+			<div class="about-us_text-column">
+				<h3 class="about-us_title">О нас</h3>
+				<p class="about-us_text">Кафе «Эфир» ресторанного комплекса «7 НЕБО» открывает свои двери для всех
+					желающих оторваться от повседневной суеты и провести время в непринужденной обстановке у
+					подножия одной из главных достопримечательностей Москвы - <b>Останкинской телебашни.</b></p>
+			</div>
+			<div class="about-image-column">
+				<img src="./img/cafe-photos/1.jpg" alt="" class="about-us_img">
+			</div>
+		</div>
+		<div class="about-us-page about-us-page__container info-block">
+			<div class="about-image-column">
+				<img src="./img/cafe-photos/3.jpeg" alt="" class="about-us_img">
+			</div>
+			<div class="about-us_text-column">
+				<h3 class="about-us_title grill-title">Гриль-кафе!</h3>
+				<p class="about-us_text">Вы можете попробовать изысканные блюда из мяса и рыбы, приготовленные на
+					открытом огне, окунуться в атмосферу гостеприимства и любоваться уникальными видами на башню из
+					панорамных окон. <br> А в летнее время года Вы можете отдохнуть на открытой веранде,
+					наслаждаясь прекрасной погодой.</b></p>
+			</div>
+		</div>
+		<!-- <div class="about-us-page about-us-final-page about-us-page__container info-block">
+			<h3 class="about-us_final-title">
+				С нетерпением ждем Вас!
+			</h3>
+		</div> -->
+		<div id="3" class="cafe-menu cafe-menu__container">
+			<div class="cafe-menu_hits info-block">
+				<h2 class="hits-title">
+					Хиты открытия
+				</h2>
+				<div class="slider">
+					<div class="item">
+						<img src="img/hits-photo/4.jpg" alt="Первый слайд">
+						<div class="slideText">Lorem, ipsum dolor.</div>
+					</div>
+
+					<div class="item">
+						<img src="img/hits-photo/5.jpg" alt="Второй слайд">
+						<div class="slideText">Lorem ipsum dolor sit.</div>
+					</div>
+
+					<div class="item">
+						<img src="img/hits-photo/1.jpg" alt="Третий слайд">
+						<div class="slideText">Lorem, ipsum.</div>
+					</div>
+
+					<a class="prev" onclick="minusSlide()">&#10094;</a>
+					<a class="next" onclick="plusSlide()">&#10095;</a>
+				</div>
+
+				<div class="slider-dots">
+					<span class="slider-dots_item" onclick="currentSlide(1)"></span>
+					<span class="slider-dots_item" onclick="currentSlide(2)"></span>
+					<span class="slider-dots_item" onclick="currentSlide(3)"></span>
+				</div>
+				<h2 class="main-menu-title hits-title">
+					Наше меню
+				</h2>
+			</div>
+			
+			<div class="menu-table">
+
+				<table>
+					<th>
+					<td style="border:1px solid black; padding: 10px;">
+						<div class="cafe-menu-item">
+							<div style="display:flex; width: 400px; justify-content: space-between; border-bottom: 1px solid black; padding: 0 0 10px 0;">
+								<h2><b>Палтус подкопченный
+									на углях / 160 г</b></h3>
+								<h3>800 Руб.</h3>
+							</div>
+							<p style="width: 300px;">палтус, помидоры черри, чеснок запеченный,
+								розмарин, масло растительное, масло
+								сливочное, соль, перец черный, лимон</p>
+						</div>
+					</td>
+					</th>
+				</table>
+			</div>
+		</div>
+	</main>
+	<footer class="footer"></footer>
+
+	<script src="./js/script.js"></script>
+</body>
+
+</html>
