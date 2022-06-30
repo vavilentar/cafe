@@ -6,6 +6,7 @@
 	color: white;
 	height: 100vh;
 	transform: translateY(-30px);
+	overflow: hidden;
 }
 .intro-page_upper {
 	position: relative;
