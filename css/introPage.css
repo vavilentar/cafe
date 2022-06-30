@@ -223,4 +223,7 @@
 	.intro-page_inner{
 		height: 100vh;
 	}
+	.intro-page_bottom{
+		display: none;
+	}
 }
