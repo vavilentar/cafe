@@ -25,7 +25,7 @@
 	justify-content: space-between;
 	height: 500px;
 	align-items: center;
-	transform: translateY(30px);
+	transform: translateY(80px);
 }
 .intro-page_center_column1 {
 	display: flex;

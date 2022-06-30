@@ -1,0 +1,14 @@
+.footer-inner__container{
+	background-color: #e5502e;
+	height: 250px;
+	margin: 0 auto;
+}
+
+.contacts__container{
+	max-width: 1300px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	color:white;
+	align-items: center;
+}

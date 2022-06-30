@@ -26,7 +26,7 @@
 				<ul class="header_list_right">
 					<li class="header-list_item"><a href="#4">События</a></li>
 					<li class="header-list_item"><a href="#5">Бронирование</a></li>
-					<li class="header-list_item"><a href="">Контакты</a></li>
+					<li class="header-list_item"><a href="#6">Контакты</a></li>
 				</ul>
 			</div>
 		</div>
@@ -221,51 +221,67 @@
 				</a>
 			</div>
 		</div>
-			<div id="4" class="events events__container info-block">
-				<h2 class="events-title">
-					События
+		<div id="4" class="events events__container info-block">
+			<h2 class="events-title">
+				События
+			</h2>
+			<div class="events-tabs">
+				<div class="event">
+					<img src="./img/events-photo/1.jpeg" alt="" class="event-img">
+					<h2 class="event-name card__title">Романтический ужин</h2>
+					<p class="event-descr card__descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+						Amet inventore nisi velit non laudantium cupiditate!</p>
+				</div>
+				<div class="event">
+					<img src="./img/events-photo/3.jpg" alt="" class="event-img">
+					<h2 class="event-name card__title">Проведение мероприятий</h2>
+					<p class="event-descr card__descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+						Amet inventore nisi velit non laudantium cupiditate!</p>
+				</div>
+				<div class="event">
+					<img src="./img/events-photo/2.jpg" alt="" class="event-img">
+					<h2 class="event-name card__title">Бизнес встреча</h2>
+					<p class="event-descr card__descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+						Amet inventore nisi velit non laudantium cupiditate!</p>
+				</div>
+			</div>
+		</div>
+		<div id="5" class="booking booking__container info-block">
+			<div class="booking-form">
+				<h2 class="booking-title about-us_title">
+					Забронировать столик
 				</h2>
-				<div class="events-tabs">
-					<div class="event">
-						<img src="./img/events-photo/1.jpeg" alt="" class="event-img">
-						<h2 class="event-name card__title">Романтический ужин</h2>
-						<p class="event-descr card__descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet inventore nisi velit non laudantium cupiditate!</p>
-					</div>
-					<div class="event">
-						<img src="./img/events-photo/3.jpg" alt="" class="event-img">
-						<h2 class="event-name card__title">Проведение мероприятий</h2>
-						<p class="event-descr card__descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet inventore nisi velit non laudantium cupiditate!</p>
-					</div>
-					<div class="event">
-						<img src="./img/events-photo/2.jpg" alt="" class="event-img">
-						<h2 class="event-name card__title">Бизнес встреча</h2>
-						<p class="event-descr card__descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet inventore nisi velit non laudantium cupiditate!</p>
-					</div>
-				</div>
+				<form action="" class="book-table-form">
+					<input required placeholder="Имя" type="text" class="book-input book-name">
+					<input required placeholder="Электронная почта" type="email" class="book-input book-email">
+					<input required placeholder="Номер телефона" type="phone" class="book-input book-phone">
+					<input required placeholder="Количество персон" type="text" class="book-input book-people">
+					<input required type="date" class="book-input book-date">
+					<button class="book-table-send">Отправить заявку</button>
+				</form>
 			</div>
-			<div id="5" class="booking booking__container info-block">
-				<div class="booking-form">
-					<h2 class="booking-title about-us_title">
-						Забронировать столик
-					</h2>
-					<form action="" class="book-table-form">
-						<input required placeholder="Имя" type="text" class="book-input book-name">
-						<input required placeholder="Электронная почта" type="email" class="book-input book-email">
-						<input required placeholder="Номер телефона" type="phone" class="book-input book-phone">
-						<input required placeholder="Количество персон" type="text" class="book-input book-people">
-						<input required type="date" class="book-input book-date">
-						<button class="book-table-send">Отправить заявку</button>
-					</form>
-				</div>
-				<div class="booking-image">
-					<img src="./img/cafe-photos/6.jpeg" alt="" class="about-us_img">
-				</div>
+			<div class="booking-image">
+				<img src="./img/cafe-photos/6.jpeg" alt="" class="about-us_img">
 			</div>
-			<div class="contacts contacts__container">
-				
-			</div>
+		</div>
 	</main>
-	<footer class="footer"></footer>
+	<footer class="footer">
+		<div class="footer-inner footer-inner__container">
+			<div id="6" class="contacts contacts__container">
+				<div class="contacts-descr">
+					<p>
+						Адрес: 127427, г. Москва, ул. Академика Королёва, д. 15, к. 2. <br>
+						Телефон: +7 (495) 926 61 25<br>Email: 7nebo@rtrn.ru
+					</p>
+				</div>
+				<div class="yandex-map">
+					<iframe
+						src="https://yandex.ru/map-widget/v1/?um=constructor%3A017636b99621a0b9eccb734a4312412e285f51220a570be65920ddb49631d7d2&amp;source=constructor"
+						width="400" height="250" frameborder="0"></iframe>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 	<script src="./js/script.js"></script>
 </body>
