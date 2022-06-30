@@ -12,8 +12,7 @@
 	border-radius: 0 0 15px 0;
 	transition: transform .5s ease-in-out;
 }
-.hamburger-list {
-}
+
 .hamburger-item{
 	padding: 10px 0 10px 10px;
 }
