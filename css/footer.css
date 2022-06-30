@@ -26,3 +26,21 @@
 		height: 200px;
 	}
 }
+
+.efir-social-footer {
+	display: flex;
+	flex-direction: column;
+}
+.efir-social-footer img {
+	width: 50px;
+	filter: drop-shadow(0px 0px 3px #222);
+}
+.efir-social-footer img:hover {
+	transition: filter .5s ease;
+	width: 50px;
+	filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));
+}
+.footer-social-tab {
+	margin-top: 10px;
+	display: flex;
+}
