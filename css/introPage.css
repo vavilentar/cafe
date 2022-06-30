@@ -1,17 +1,18 @@
 .intro-page_inner {
-	background-color: rgb(206, 206, 206);
-	background-image: url(../img/cafeefir.jpg);
+	background: #e5502e;
+	/* background-image: url(../img/cafeefir.jpg); */
 	background-size: cover;
 	background-position: center;
 	color: white;
 	height: 100vh;
+	transform: translateY(-30px);
 }
 .intro-page_upper {
 	position: relative;
 }
 .intro-page_logotype {
 	position: absolute;
-	top: 0;
+	top: 40px;
 	width: 200px;
 	left: 50%;
 	transform: translateX(-50%);
@@ -24,6 +25,7 @@
 	justify-content: space-between;
 	height: 500px;
 	align-items: center;
+	transform: translateY(30px);
 }
 .intro-page_center_column1 {
 	display: flex;
@@ -35,7 +37,10 @@
 	text-align: center;
 }
 .intro-page_center_column3 {
-	background: rgba(255, 166, 0, 0.9);
+	/* background: rgba(255, 166, 0, 0.9); */
+	background-color: rgba(255,255,255, .05);
+	box-shadow: 0 0 10px rgba(0,0,0,.25);
+	backdrop-filter: blur(10px);
 	border-radius: 0 15px 15px 0;
 	animation: social-fade 1.2s ease-in-out forwards;
 }
@@ -52,7 +57,7 @@
 .efir-social img:hover {
 	transition: filter .5s ease;
 	width: 50px;
-	filter: drop-shadow(0px 0px 5px rgb(255, 235, 147));
+	filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));
 }
 
 .intro-page_bottom {
@@ -70,12 +75,14 @@
 	border: 2px solid rgb(255, 255, 255);
 	border-radius: 100%;
 	color: white;
-	font-size: 40px;
+	font-size: 35px;
 	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
 	0px 8px 13px rgba(0,0,0,0.1),
 	0px 18px 23px rgba(0,0,0,0.1);
 	transform: translateY(-30px);
-	background: rgba(255, 166, 0, 0.9);
+	background-color: rgba(255,255,255, .05);
+	box-shadow: 0 0 10px rgba(0,0,0,.25);
+	backdrop-filter: blur(10px);
 }
 
 .subheader {
@@ -105,17 +112,6 @@
 	cursor:default;
 }
 
-.main-title::after {
-	position: absolute;
-	content: '';
-	height: 5px;
-	width: 100%;
-	background: rgba(255, 166, 0, 0.9);
-	bottom: 10px;
-	left: 0;
-	border-radius: 15px;
-	box-shadow: 0px 4px 3px rgba(0,0,0,0.4);
-}
 
 @keyframes social-fade {
 	from {
@@ -140,8 +136,8 @@
 
 .book-table_btn {
     border-radius: 5px;
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    background: linear-gradient(135deg, rgba(255, 166, 0, 0.9) 25%, transparent 25%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: linear-gradient(135deg, #e5502e 25%, white 25%);
     background-repeat: no-repeat;
     background-size: 1000px auto;
     background-position: -300px 0;
@@ -149,14 +145,10 @@
     font-weight: 600;
     font-family: 'Open Sans';
     line-height: 20px;
-    color: #ffffff;
+    color: black;
     height: 30px;
     width: 150px;
     cursor: pointer;
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-    0px 8px 13px rgba(0,0,0,0.1),
-    0px 18px 23px rgba(0,0,0,0.1);
-    box-shadow: 0px 2px 5px rgba(255, 187, 62, 0.9);
 }
 .book-table_btn:hover{
 	animation: btn-background 1s forwards;
@@ -168,5 +160,32 @@
 	}
 	to {
 		background-position: 0px 0;
+	}
+}
+
+.mouse {
+	width: 20px;
+	height: 50px;
+	border: 2px solid #fff;
+	border-radius: 20px;
+	display: flex;
+}
+.mouse-wheel {
+	display: block;
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	border-radius: 50%;
+	margin: auto;
+	animation: move-wheel 1s linear infinite;
+}
+@keyframes move-wheel {
+	0% {
+		opacity: 0;
+		transform: translateY(-1rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(1rem);
 	}
 }

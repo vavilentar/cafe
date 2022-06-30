@@ -24,8 +24,8 @@
 			</div>
 			<div class="header_list">
 				<ul class="header_list_right">
-					<li class="header-list_item"><a href="">События</a></li>
-					<li class="header-list_item"><a href="">Бронирование</a></li>
+					<li class="header-list_item"><a href="#4">События</a></li>
+					<li class="header-list_item"><a href="#5">Бронирование</a></li>
 					<li class="header-list_item"><a href="">Контакты</a></li>
 				</ul>
 			</div>
@@ -34,7 +34,6 @@
 	<main class="main main__container">
 		<div id="1" class="intro-page_inner">
 			<div class="intro-page_upper">
-				<!-- Логотип -->
 				<img src="./img/heaven-white.png" alt="" class="intro-page_logotype">
 			</div>
 			<div class="intro-page_center">
@@ -43,20 +42,22 @@
 					<a href="2" class="efir-social"><img src="./icons/telegram.png" alt=""></a>
 					<a href="3" class="efir-social"><img src="./icons/vk-new.png" alt=""></a>
 					<a href="4" class="efir-social"><img src="./icons/odn.png" alt=""></a>
-				</div> <!-- Социальные сети -->
+				</div>
 				<div class="intro-page_center_column2">
 					<h2 class="subheader">Кафе</h2>
 					<h1 class="title main-title">"ЭФИР"</h1>
-					<button class="book-table_btn">Забронировать</button>
-					<button class="book-table_btn">Посмотреть меню</button>
+					<button class="book-table_btn"><a href="#5">Забронировать</a></button>
+					<button class="book-table_btn"><a href="#3">Посмотреть меню</a></button>
 
-				</div> <!-- Название -->
-				<div class="intro-page_center_column1"></div> <!-- Режим работы -->
+				</div>
+				<div class="intro-page_center_column1"></div>
 
 			</div>
 			<div class="intro-page_bottom">
-				<!-- Прокрутка вниз -->
-				<a href="#2" class="arrow-down-link"><i class="fa-solid fa-arrow-down"></i></a>
+
+				<span class="mouse">
+					<span class="mouse-wheel"></span>
+				</span>
 			</div>
 		</div>
 		<div id="2" class="about-us-page about-us-page__container info-block">
@@ -64,7 +65,9 @@
 				<h3 class="about-us_title">О нас</h3>
 				<p class="about-us_text">Кафе «Эфир» ресторанного комплекса «7 НЕБО» открывает свои двери для всех
 					желающих оторваться от повседневной суеты и провести время в непринужденной обстановке у
-					подножия одной из главных достопримечательностей Москвы - <b>Останкинской телебашни.</b></p>
+					подножия одной из главных достопримечательностей Москвы - <a target="_blank"
+						href="https://www.tvtower.ru/"><b style="color:#e5502e">Останкинской
+							телебашни.</b></a></p>
 			</div>
 			<div class="about-image-column">
 				<img src="./img/cafe-photos/1.jpg" alt="" class="about-us_img">
@@ -72,7 +75,8 @@
 		</div>
 		<div class="about-us-page about-us-page__container info-block">
 			<div class="about-image-column">
-				<img src="./img/cafe-photos/3.jpeg" alt="" class="about-us_img">
+				<img src="./img/cafe-photos/2.jpg" alt="" class="about-us_img">
+
 			</div>
 			<div class="about-us_text-column">
 				<h3 class="about-us_title grill-title">Гриль-кафе!</h3>
@@ -87,61 +91,179 @@
 				С нетерпением ждем Вас!
 			</h3>
 		</div> -->
-		<div id="3" class="cafe-menu cafe-menu__container">
-			<div class="cafe-menu_hits info-block">
-				<h2 class="hits-title">
-					Хиты открытия
-				</h2>
-				<div class="slider">
-					<div class="item">
-						<img src="img/hits-photo/4.jpg" alt="Первый слайд">
-						<div class="slideText">Lorem, ipsum dolor.</div>
-					</div>
 
-					<div class="item">
-						<img src="img/hits-photo/5.jpg" alt="Второй слайд">
-						<div class="slideText">Lorem ipsum dolor sit.</div>
-					</div>
-
-					<div class="item">
-						<img src="img/hits-photo/1.jpg" alt="Третий слайд">
-						<div class="slideText">Lorem, ipsum.</div>
-					</div>
-
-					<a class="prev" onclick="minusSlide()">&#10094;</a>
-					<a class="next" onclick="plusSlide()">&#10095;</a>
+		<!-- <div class="cafe-photos-slider cafe-photos-slider__container">
+			<div class="slider">
+				<div class="item">
+					<img src="img/cafe-photos/10.jpg" alt="">
+					<img src="img/cafe-photos/2.jpg" alt="">
+					<img src="img/cafe-photos/3.jpeg" alt="">
 				</div>
 
-				<div class="slider-dots">
-					<span class="slider-dots_item" onclick="currentSlide(1)"></span>
-					<span class="slider-dots_item" onclick="currentSlide(2)"></span>
-					<span class="slider-dots_item" onclick="currentSlide(3)"></span>
+				<div class="item">
+					<img src="img/cafe-photos/4.jpeg" alt="">
+					<img src="img/cafe-photos/5.jpeg" alt="">
+					<img src="img/cafe-photos/6.jpeg" alt="">
 				</div>
-				<h2 class="main-menu-title hits-title">
-					Наше меню
-				</h2>
+
+				<div class="item">
+					<img src="img/cafe-photos/7.jpeg" alt="">
+					<img src="img/cafe-photos/8.jpg" alt="">
+					<img src="img/cafe-photos/9.jpg" alt="">
+				</div>
+
+				<a class="prev" onclick="minusSlide()">&#10094;</a>
+				<a class="next" onclick="plusSlide()">&#10095;</a>
 			</div>
-			
-			<div class="menu-table">
 
-				<table>
-					<th>
-					<td style="border:1px solid black; padding: 10px;">
-						<div class="cafe-menu-item">
-							<div style="display:flex; width: 400px; justify-content: space-between; border-bottom: 1px solid black; padding: 0 0 10px 0;">
-								<h2><b>Палтус подкопченный
-									на углях / 160 г</b></h3>
-								<h3>800 Руб.</h3>
-							</div>
-							<p style="width: 300px;">палтус, помидоры черри, чеснок запеченный,
+			<div class="slider-dots">
+				<span class="slider-dots_item" onclick="currentSlide(1)"></span>
+				<span class="slider-dots_item" onclick="currentSlide(2)"></span>
+				<span class="slider-dots_item" onclick="currentSlide(3)"></span>
+			</div>
+		</div>
+		</div> -->
+
+		<div id="3" class="cafe-menu cafe-menu__container">
+			<h2 class="hits-title info-block">
+				Меню
+			</h2>
+			<div class="menu-links info-block">
+				<a target="_blank" href="https://tvtower.ru/upload/menu/cafe_menu.pdf" class="cafe-link"><img
+						class="menu-icon" src="./icons/cafe-menu.png" alt="">
+					<p>Полное меню</p>
+				</a>
+				<a target="_blank" href="https://tvtower.ru/upload/menu/cafe_bar.pdf" class="cafe-link"><img
+						class="menu-icon" src="./icons/drinks-menu.png" alt="">
+					<p>Барная карта</p>
+				</a>
+			</div>
+			<div class="cafe-menu_hits info-block">
+
+				<div>
+					<article class="card">
+						<img src="./img/hits-photo/1.jpg" alt="" class="card__img">
+						<div class="card__data">
+							<h2 class="card__title">Палтус подкопченный
+								на углях</h2>
+							<p class="card__descr">палтус, помидоры черри, чеснок запеченный,
 								розмарин, масло растительное, масло
 								сливочное, соль, перец черный, лимон</p>
 						</div>
-					</td>
-					</th>
-				</table>
+					</article>
+					<article class="card">
+						<img src="./img/hits-photo/2.jpg" alt="" class="card__img">
+						<div class="card__data">
+							<h2 class="card__title">Пикантный кальмар</h2>
+							<p class="card__descr">кальмар, огурцы, помидоры черри,
+								розмарин, соус Шрирача, лайм, масло
+								растительное, масло сливочное, соль, перец
+								черный, перец кампотский</p>
+						</div>
+					</article>
+					<article class="card">
+						<img src="./img/hits-photo/3.jpg" alt="" class="card__img">
+						<div class="card__data">
+							<h2 class="card__title">Ломтики африканского сомика
+								на шампуре</h2>
+							<p class="card__descr">сом, розмарин, лук красный, помидоры
+								черри, микс зелени, лаваш, лимоны, масло
+								сливочное, перец кампотский, соль</p>
+						</div>
+					</article>
+				</div>
+
+				<div>
+					<article class="card">
+						<img src="./img/hits-photo/3.jpg" alt="" class="card__img">
+						<div class="card__data">
+							<h2 class="card__title">Медальон из индейки</h2>
+							<p class="card__descr">индейка, помидоры черри, чеснок
+								запеченный, розмарин, масло
+								растительное, масло сливочное, соль,
+								перец черный</p>
+						</div>
+					</article>
+					<article class="card">
+						<img src="./img/hits-photo/1.jpg" alt="" class="card__img">
+						<div class="card__data">
+							<h2 class="card__title">Колбаса кровяная на гриле</h2>
+							<p class="card__descr">колбаса кровяная (говяжья печень, свиной
+								окорок, гречка, альбумин пищевой, яйцо
+								куриное, сливки, лук репчатый, масло
+								сливочное, соль, перец черный, свиные
+								черева), масло нерафинированное, чеснок
+								запеченный, розмарин, помидоры черри,
+								масло оливковое, перец кампотский</p>
+						</div>
+					</article>
+					<article class="card">
+						<img src="./img/hits-photo/2.jpg" alt="" class="card__img">
+						<div class="card__data">
+							<h2 class="card__title">Шашлык из сливы</h2>
+							<p class="card__descr">слива, сахар тростниковый, масло
+								сливочное, мороженое ванильное,
+								штрейзель-печенье, мед, орехи грецкие,
+								мята</p>
+						</div>
+					</article>
+				</div>
+
+			</div>
+			<div class="menu-links info-block">
+				<a target="_blank" href="https://tvtower.ru/upload/menu/cafe_menu.pdf" class="cafe-link"><img
+						class="menu-icon" src="./icons/cafe-menu.png" alt="">
+					<p>Полное меню</p>
+				</a>
+				<a target="_blank" href="https://tvtower.ru/upload/menu/cafe_bar.pdf" class="cafe-link"><img
+						class="menu-icon" src="./icons/drinks-menu.png" alt="">
+					<p>Барная карта</p>
+				</a>
 			</div>
 		</div>
+			<div id="4" class="events events__container info-block">
+				<h2 class="events-title">
+					События
+				</h2>
+				<div class="events-tabs">
+					<div class="event">
+						<img src="./img/events-photo/1.jpeg" alt="" class="event-img">
+						<h2 class="event-name card__title">Романтический ужин</h2>
+						<p class="event-descr card__descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet inventore nisi velit non laudantium cupiditate!</p>
+					</div>
+					<div class="event">
+						<img src="./img/events-photo/3.jpg" alt="" class="event-img">
+						<h2 class="event-name card__title">Проведение мероприятий</h2>
+						<p class="event-descr card__descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet inventore nisi velit non laudantium cupiditate!</p>
+					</div>
+					<div class="event">
+						<img src="./img/events-photo/2.jpg" alt="" class="event-img">
+						<h2 class="event-name card__title">Бизнес встреча</h2>
+						<p class="event-descr card__descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet inventore nisi velit non laudantium cupiditate!</p>
+					</div>
+				</div>
+			</div>
+			<div id="5" class="booking booking__container info-block">
+				<div class="booking-form">
+					<h2 class="booking-title about-us_title">
+						Забронировать столик
+					</h2>
+					<form action="" class="book-table-form">
+						<input required placeholder="Имя" type="text" class="book-input book-name">
+						<input required placeholder="Электронная почта" type="email" class="book-input book-email">
+						<input required placeholder="Номер телефона" type="phone" class="book-input book-phone">
+						<input required placeholder="Количество персон" type="text" class="book-input book-people">
+						<input required type="date" class="book-input book-date">
+						<button class="book-table-send">Отправить заявку</button>
+					</form>
+				</div>
+				<div class="booking-image">
+					<img src="./img/cafe-photos/6.jpeg" alt="" class="about-us_img">
+				</div>
+			</div>
+			<div class="contacts contacts__container">
+				
+			</div>
 	</main>
 	<footer class="footer"></footer>
 

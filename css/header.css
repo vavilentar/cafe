@@ -5,6 +5,7 @@
 	z-index: 99;
 	background: rgba(189, 189, 189, 0.753);
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(2px)
 }
 
 @keyframes text-levitate {
@@ -70,7 +71,7 @@
 	height: 3px;
 	width: 3px;
 	bottom: -3px;
-	background-color: rgb(255, 136, 0);
+	background-color: #e5502e;
 }
 
 .header-list_item:hover::before {
