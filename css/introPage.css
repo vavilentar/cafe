@@ -129,7 +129,7 @@
 	}
 	to {
 		opacity: 1;
-		transform: translateX(0px);
+		transform: translateX(2px);
 
 	}
 }
@@ -200,7 +200,7 @@
 }
 
 @media (max-width: 426px) {
-	.intro-page_center_column3, .intro-page_center_column1, .intro-page_upper {
+	.intro-page_center_column3, .intro-page_center_column1, {
 		display: none;
 	}
 	.intro-page_center_column2{
