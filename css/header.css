@@ -78,7 +78,7 @@
 	animation: links-animation .4s ease forwards;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 769px) {
 	.header_inner {
 		display: none;
 	}

@@ -40,13 +40,23 @@
 	background-color: #e5502e;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 769px) {
 	.events-tabs {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;	
 	}
+}
+
+@media (max-width: 426px) {
+
 	.event {
 		width: 400px;
+	}
+}
+
+@media (max-width: 376px) {
+	.event {
+		width: 320px;
 	}
 }

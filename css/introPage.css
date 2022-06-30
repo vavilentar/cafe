@@ -199,7 +199,7 @@
 	}
 }
 
-@media (max-width: 426px) {
+@media (max-width: 769px) {
 	.intro-page_center_column3, .intro-page_center_column1 {
 		display: none;
 	}
@@ -227,4 +227,9 @@
 	.intro-page_bottom{
 		display: none;
 	}
+}
+
+
+@media (max-width: 426px) {
+
 }

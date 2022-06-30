@@ -83,6 +83,16 @@
 	border-radius: 15px;
 }
 
+@media (max-width: 769px) {
+	.about-us-page{
+		width: 700px;
+	}
+	.about-us_img {
+		width: 20em;
+		height: 20em;
+	}
+}
+
 @media (max-width: 426px) {
 	.about-us-page {
 		flex-direction: column;
@@ -90,12 +100,15 @@
 		height: 600px;
 		align-items: center;
 		margin: 50px auto;
+		width: auto;
 	}
+
 	.about-us_img {
 		width: 15em;
 		height: 15em;
 	}
-.about-us_text-column {
-	width: 300px;
-}
+
+	.about-us_text-column {
+		width: 300px;
+	}
 }

@@ -119,3 +119,18 @@
 	width: 75px;
 }
 }
+
+@media (max-width: 376px) {
+	.card {
+		width: 300px;
+		height: 300px;
+	}
+
+	.cafe-menu_hits {
+		flex-direction: column;
+	}
+
+	.card__data {
+		transform: translateY(-300px);
+	}
+}
