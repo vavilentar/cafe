@@ -13,6 +13,24 @@
 </head>
 
 <body>
+	<div class="open">
+		<label for="checkbox" class="hamb">
+			<input class="hamCheck" type="checkbox" id="checkbox">
+			<span class="line line-main"></span>
+			<span class="line line-split"></span>
+		</label>
+	</div>
+	<div class="hamburger-menu">
+		<ul class="hamburger-list">
+			<li class="hamburger-item"><a href="#1">Главная</a></li>
+			<li class="hamburger-item"><a href="#2">О нас</a></li>
+			<li class="hamburger-item"><a href="#3">Меню</a></li>
+			<li class="hamburger-item"><a href="#4">События</a></li>
+			<li class="hamburger-item"><a href="#5">Бронирование</a></li>
+			<li class="hamburger-item"><a href="#6">Контакты</a></li>
+		</ul>
+
+	</div>
 	<header class="header header__container">
 		<div class="header_inner">
 			<div class="header_list">
@@ -256,8 +274,8 @@
 					<input required placeholder="Электронная почта" type="email" class="book-input book-email">
 					<input required placeholder="Номер телефона" type="phone" class="book-input book-phone">
 					<input required placeholder="Количество персон" type="text" class="book-input book-people">
-					<input placeholder="Дата и время" required type="datetime-local" class="book-input book-date">
-					<button class="book-table-send">Отправить заявку</button>
+					<input placeholder="Дата и время" required type="date" class="book-input book-date">
+					<button class="book-table-send">Оставить заявку</button>
 				</form>
 			</div>
 			<div class="booking-image">

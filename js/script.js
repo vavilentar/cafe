@@ -1,6 +1,21 @@
 const infoBoxes = document.querySelectorAll('.info-block');
 window.addEventListener('scroll', checkBoxes);
 
+const openMenu = document.querySelector('.hamCheck');
+const hamMenu = document.querySelector('.hamburger-menu');
+const hamItem = document.querySelectorAll('.hamburger-item');
+
+openMenu.addEventListener('click',(e) => {
+    hamMenu.classList.toggle('active');
+})
+
+hamItem.forEach((item) => {
+    item.addEventListener('click', e => {
+        hamMenu.classList.toggle('active')
+        openMenu.checked=false;
+    })
+})
+
 function checkBoxes() {
 	const triggerBottom = window.innerHeight / 5 * 4;
 
@@ -59,3 +74,4 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+
