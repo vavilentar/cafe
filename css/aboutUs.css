@@ -83,3 +83,20 @@
 	left: 0;
 	border-radius: 15px;
 }
+
+@media (max-width: 426px) {
+	.about-us-page {
+		flex-direction: column;
+		justify-content: space-between;
+		height: 600px;
+		align-items: center;
+		margin: 50px auto;
+	}
+	.about-us_img {
+		width: 15em;
+		height: 15em;
+	}
+.about-us_text-column {
+	width: 300px;
+}
+}

@@ -1,14 +1,28 @@
-.footer-inner__container{
+.footer-inner__container {
 	background-color: #e5502e;
 	height: 250px;
 	margin: 0 auto;
 }
 
-.contacts__container{
+.contacts__container {
 	max-width: 1300px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-around;
-	color:white;
+	color: white;
 	align-items: center;
+}
+
+@media (max-width: 426px) {
+	.yandex-map {
+		display: none;
+	}
+
+	.contacts-descr {
+		width: 200px;
+	}
+
+	.footer-inner__container {
+		height: 200px;
+	}
 }

@@ -39,3 +39,14 @@
 .event-name {
 	background-color: #e5502e;
 }
+
+@media (max-width: 426px) {
+	.events-tabs {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;	
+	}
+	.event {
+		width: 300px;
+	}
+}

@@ -77,3 +77,9 @@
 .header-list_item:hover::before {
 	animation: links-animation .4s ease forwards;
 }
+
+@media (max-width: 426px) {
+	.header_inner {
+		display: none;
+	}
+}
