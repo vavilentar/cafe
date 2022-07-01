@@ -12,7 +12,7 @@
 	<title>Кафе "Эфир"</title>
 </head>
 
-<body>
+<body>	
 	<div class="open">
 		<label for="checkbox" class="hamb">
 			<input class="hamCheck" type="checkbox" id="checkbox">
@@ -232,16 +232,23 @@
 			</div>
 		</div>
 		<div id="5" class="booking booking__container info-block">
+
+			<div class="success-modal">
+				<h2 class="success-modal_title">Вы успешно оставили заявку!</h2>
+				<p class="success-modal_subtitle">Мы обязательно свяжемся с Вами в ближайшее время для подтверждения бронирования!</p>
+				<button class="success-modal_close-btn">Закрыть</button>
+			</div>
+
 			<div class="booking-form">
 				<h2 class="booking-title about-us_title">
 					Забронировать столик
 				</h2>
 				<form action="" class="book-table-form">
-					<input required placeholder="Имя" type="text" class="book-input book-name">
-					<input required placeholder="Электронная почта" type="email" class="book-input book-email">
-					<input required placeholder="Номер телефона" type="phone" class="book-input book-phone">
-					<input required placeholder="Количество персон" type="text" class="book-input book-people">
-					<input placeholder="Дата и время" required type="date" class="book-input book-date">
+					<input placeholder="Имя" type="text" class="book-input book-name">
+					<input placeholder="Электронная почта" type="email" class="book-input book-email">
+					<input placeholder="Номер телефона" type="phone" class="book-input book-phone">
+					<input placeholder="Количество персон" type="text" class="book-input book-people">
+					<input placeholder="Дата и время" type="date" class="book-input book-date">
 					<button class="book-table-send">Оставить заявку</button>
 				</form>
 			</div>

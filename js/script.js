@@ -4,6 +4,19 @@ window.addEventListener('scroll', checkBoxes);
 const openMenu = document.querySelector('.hamCheck');
 const hamMenu = document.querySelector('.hamburger-menu');
 const hamItem = document.querySelectorAll('.hamburger-item');
+const modal = document.querySelector('.success-modal');
+const sendReq = document.querySelector('.book-table-send');
+const closeModal = document.querySelector('.success-modal_close-btn');
+
+sendReq.addEventListener('click', (e) => {
+    e.preventDefault();
+    modal.classList.add('modal-opened');
+})
+
+closeModal.addEventListener('click', (e) => {
+    e.preventDefault();
+    modal.classList.remove('modal-opened');
+})
 
 openMenu.addEventListener('click',(e) => {
     hamMenu.classList.toggle('active');
