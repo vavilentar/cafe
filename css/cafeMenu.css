@@ -98,12 +98,12 @@
 }
 
 .menu-icon:hover {
-	filter: drop-shadow(1px 1px 4px #e5502e);
+	animation: icons-glowing infinite alternate-reverse .5s ease-in-out;
 }
 
 @media (max-width: 769px) {
 	.menu-icon {
-		animation: icons-glowing infinite alternate 1s ease;
+		animation: icons-glowing infinite alternate-reverse .5s ease-in-out;
 	}
 }
 
