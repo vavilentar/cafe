@@ -204,8 +204,8 @@
 		transform: translateY(15vh);
 	}
 
-	.main-title {
-		font-size: 62px;
+	.main-title img{
+		transform: translateX(-25%);
 	}
 
 	.subheader {
@@ -240,5 +240,18 @@
 
 	.book-table_btn:hover {
 		animation: none;
+	}
+}
+
+@media (max-width: 426px) {
+	.main-title img{
+		transform: translateX(-10%);
+		width: 90vw;
+	}
+}
+
+@media (max-width: 376px) {
+	.main-title img {
+		transform: translateX(-5%);
 	}
 }
