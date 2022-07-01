@@ -1,6 +1,5 @@
 .intro-page_inner {
 	background: #e5502e;
-	/* background-image: url(../img/cafeefir.jpg); */
 	background-size: cover;
 	background-position: center;
 	color: white;
@@ -48,7 +47,6 @@
 }
 
 .intro-page_center_column3 {
-	/* background: rgba(255, 166, 0, 0.9); */
 	background-color: rgba(255, 255, 255, .05);
 	box-shadow: 0 0 10px rgba(0, 0, 0, .25);
 	backdrop-filter: blur(10px);
@@ -110,7 +108,6 @@
 	cursor: default;
 }
 
-
 @keyframes social-fade {
 	from {
 		opacity: 0;
@@ -154,16 +151,6 @@
 .book-table_btn:hover {
 	animation: btn-background 1s forwards;
 }
-
-/* @keyframes btn-animate {
-	from {
-		background-position: -100px 0;
-	}
-
-	to {
-		background-position: 100px 0;
-	}
-} */
 
 @keyframes btn-background {
 	from {
@@ -245,17 +232,13 @@
 	}
 
 	.book-table_btn {
-		/* background: linear-gradient(270deg, #e5502e 50%, white 50%); */
-		/* background-size: 20px 40px; */
-		/* animation: btn-animate infinite 9s linear; */
+
 		font-weight: 700;
 		font-size: .9rem;
 		text-shadow: 0px 0px 5px white;
 	}
+
 	.book-table_btn:hover {
 		animation: none;
 	}
 }
-
-
-@media (max-width: 426px) {}
